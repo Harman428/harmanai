@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harman AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="logo">Harman AI</div>
+      <nav>
+        <a href="#humanizer">Humanizer</a>
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="hero" id="about">
+      <p class="eyebrow">Advanced Humanize Writing Assistant</p>
+      <h1>
+        Turn college drafts into natural,
+        <span>human-style writing</span>.
+      </h1>
+      <p class="subtitle">
+        Paste your paragraph and click <strong>Humanize Text</strong> to make it
+        sound cleaner and more natural for assignments.
+      </p>
+    </main>
+
+    <section class="humanizer" id="humanizer">
+      <div class="panel">
+        <label for="inputText">Paste your draft text</label>
+        <textarea
+          id="inputText"
+          rows="8"
+          placeholder="Example: In this essay I am going to explain climate change and why it is very important for everyone..."
+        ></textarea>
+      </div>
+
+      <div class="actions">
+        <button id="humanizeBtn" class="btn btn-primary" type="button">
+          Humanize Text
+        </button>
+        <button id="clearBtn" class="btn btn-secondary" type="button">
+          Clear
+        </button>
+        <button id="copyBtn" class="btn btn-secondary" type="button">
+          Copy Output
+        </button>
+      </div>
+
+      <div class="status-bar" aria-live="polite">
+        <p id="statusText">Ready to humanize your text.</p>
+        <p id="timerText">0.0s</p>
+      </div>
+
+      <div class="panel">
+        <label for="outputText">Humanized output</label>
+        <textarea id="outputText" rows="8" readonly></textarea>
+      </div>
+
+      <p class="note">
+        Note: No tool can honestly guarantee "0 AI" on every detector. This
+        tool improves readability and human tone.
+      </p>
+    </section>
+
+    <section class="features" id="features">
+      <article class="card">
+        <h2>Natural Rewrites</h2>
+        <p>Transforms robotic text into fluent, readable language.</p>
+      </article>
+      <article class="card">
+        <h2>Academic Tone Control</h2>
+        <p>Shift from casual to formal style for college submissions.</p>
+      </article>
+      <article class="card">
+        <h2>Original Voice</h2>
+        <p>Preserves your meaning while enhancing expression and clarity.</p>
+      </article>
+    </section>
+
+    <footer id="contact">
+      <p>© <span id="year"></span> Harman AI. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
